@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: python-opengl-vnc:0.0.1
+    container_name: python-opengl-vnc
+    stdin_open: true
+    tty: true
+    ports:
+      - "5900:5900"
+    volumes:
+      - ./code:/app/code
+      - ./.vscode-server:/root/.vscode-server
