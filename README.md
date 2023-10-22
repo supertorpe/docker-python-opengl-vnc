@@ -14,6 +14,7 @@ Now, you can connect your VNC client to localhost:5900 to display the container'
 <p>You can also use Visual Studio Code extension "Dev containers" to attach vscode to the container and develop from there as if you were coding on the host.</p>
 <p>I encourage you to install the vscode extension "Python" so that you can debug your code.</p>
 <p>Make sure you create .py files from the host -not from the container-, because the container is running with "root" user, so the files you create from the container will belong to "root" user instead of your current user.</p>
+
 # Shutting down the container
 
 ```
